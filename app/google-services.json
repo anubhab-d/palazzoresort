@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "126755004934",
+    "project_id": "palazzoresort-7ee32",
+    "storage_bucket": "palazzoresort-7ee32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126755004934:android:b3fc9caab85837544a1987",
+        "android_client_info": {
+          "package_name": "com.example.android.hotelbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126755004934-o13nh8udd8qg3s6aedapeqb2pu6cbhqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCxNA-w7rZKoBbs2iT1aHJ1EGJzNm356g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126755004934-o13nh8udd8qg3s6aedapeqb2pu6cbhqs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

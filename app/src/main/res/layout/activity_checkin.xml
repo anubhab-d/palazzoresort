@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".checkin">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+
+
+        android:background="#122620"
+        android:src="@drawable/logotop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="329dp"
+        android:layout_height="558dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.641">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="147dp"
+            android:layout_height="61dp"
+            android:gravity="center"
+            android:text="Name"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="147dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="ID number"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="147dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:text="Room Type"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="147dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="180dp"
+            android:gravity="center"
+            android:text="Room No."
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="330dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="240dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="181dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="150dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="181dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="181dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="181dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="180dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="450dp"
+            android:background="#FFE55C"
+            android:text="CHECK OUT"
+            android:textColor="#000000"
+            app:backgroundTint="#FFE55C" />
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

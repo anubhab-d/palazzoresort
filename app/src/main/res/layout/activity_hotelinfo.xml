@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".hotelinfo">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:src="@drawable/logotop"
+
+
+        android:background="#122620"/>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:src="@drawable/standard" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="20dp"
+        android:text="La Casa De Papel Hotel"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address jndjnjdn nskdnks jdnsfjks ksdk"
+        android:textSize="15dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="25dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:text="Address jndjnjdn nskdnks jdnsfjks ksdk"
+        android:layout_gravity="fill_horizontal"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/proceed"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="#FFE55C"
+        android:elevation="20dp"
+        android:text="PROCEED TO DETAILS"
+        android:textColor="@color/black"
+        app:backgroundTint="#FFE55C" />
+</LinearLayout>
