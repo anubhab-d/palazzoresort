@@ -1,7 +1,7 @@
 package com.example.android.hotelbook;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -10,21 +10,38 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 
-public class Bookingdates extends Activity {
+import org.jetbrains.annotations.NotNull;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class Bookingdates extends Insert{
     int numguests=0;
     Button plus;
     Button minus;
     FirebaseAuth fAuth;
     FirebaseFirestore fstore;
     String userID;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,22 +53,17 @@ public class Bookingdates extends Activity {
         userID = fAuth.getCurrentUser().getUid();
 
 
-        TextView mail = (TextView)findViewById(R.id.mail);
-        TextView phone = (TextView)findViewById(R.id.phone);
-        TextView nameuser = (TextView)findViewById(R.id.name);
+        TextView mail = (TextView)findViewById(R.id.mail_final);
+        TextView phone = (TextView)findViewById(R.id.phone_final);
+        TextView nameuser = (TextView)findViewById(R.id.name_final);
 
-        DocumentReference documentReference = fstore.collection("users").document(userID);
-        documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
+        Button b = (Button) findViewById(R.id.confirm);
+        b.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onEvent(@Nullable @org.jetbrains.annotations.Nullable DocumentSnapshot value, @Nullable @org.jetbrains.annotations.Nullable FirebaseFirestoreException error) {
-                phone.setText(value.getString("mobnum"));
-                mail.setText(value.getString("email"));
-                nameuser.setText(value.getString("name"));
+            public void onClick(View view) {
+                insertActor();
             }
         });
-
-
-
 
 
 
@@ -127,3 +139,4 @@ public class Bookingdates extends Activity {
         num.setText(""+numguests);
     }
 }
+
