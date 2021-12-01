@@ -3,6 +3,7 @@ package com.example.android.hotelbook;
 import androidx.annotation.NonNull;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -49,6 +50,10 @@ public class Register_screen extends Activity implements View.OnClickListener {
             case R.id.register:
                 registerUser();
         }
+
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+
     }
 
     private void registerUser() {
@@ -56,6 +61,8 @@ public class Register_screen extends Activity implements View.OnClickListener {
         String name = name_edit.getText().toString().trim();
         String mob = mobnum_edit.getText().toString().trim();
         String pass = pass_edit.getText().toString().trim();
+        String roomtype = "NA";
+        String roomno = "NA";
 
         if(name.isEmpty()){
 
@@ -96,7 +103,7 @@ public class Register_screen extends Activity implements View.OnClickListener {
                     @Override
                     public void onComplete(@NonNull @NotNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            User user = new User(name, mob, email);
+                            User user = new User(name, mob, email, roomtype, roomno);
                             FirebaseDatabase.getInstance().getReference("Users")
                                     .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                     .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {

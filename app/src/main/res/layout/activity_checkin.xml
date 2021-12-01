@@ -38,19 +38,10 @@
             android:textColor="#000000" />
 
         <TextView
-            android:id="@+id/textView19"
-            android:layout_width="147dp"
-            android:layout_height="61dp"
-            android:layout_marginTop="60dp"
-            android:gravity="center"
-            android:text="ID number"
-            android:textColor="#000000" />
-
-        <TextView
             android:id="@+id/textView21"
             android:layout_width="147dp"
             android:layout_height="61dp"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="60dp"
             android:gravity="center"
             android:text="Room Type"
             android:textColor="#000000" />
@@ -59,60 +50,39 @@
             android:id="@+id/textView23"
             android:layout_width="147dp"
             android:layout_height="61dp"
-            android:layout_marginTop="180dp"
+            android:layout_marginTop="120dp"
             android:gravity="center"
             android:text="Room No."
             android:textColor="#000000" />
 
         <TextView
-            android:id="@+id/textView25"
-            android:layout_width="330dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="240dp"
-            android:gravity="center"
-            android:textColor="#000000"
-            android:textSize="50sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/name_cin"
             android:layout_width="181dp"
             android:layout_height="61dp"
             android:layout_marginLeft="150dp"
             android:gravity="center"
-            android:text="TextView"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/room_type_cin"
             android:layout_width="181dp"
             android:layout_height="61dp"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="60dp"
             android:gravity="center"
-            android:text="TextView"
             android:textColor="#000000"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/room_no_cin"
             android:layout_width="181dp"
             android:layout_height="61dp"
             android:layout_marginLeft="150dp"
             android:layout_marginTop="120dp"
             android:gravity="center"
-            android:text="TextView"
-            android:textColor="#000000" />
-
-        <TextView
-            android:id="@+id/textView24"
-            android:layout_width="181dp"
-            android:layout_height="61dp"
-            android:layout_marginLeft="150dp"
-            android:layout_marginTop="180dp"
-            android:gravity="center"
-            android:text="TextView"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button"
@@ -125,5 +95,29 @@
             android:textColor="#000000"
             app:backgroundTint="#FFE55C" />
 
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="181dp"
+            android:layout_marginTop="220dp"
+            app:srcCompat="@drawable/ending"
+            tools:src="@drawable/ending" />
+
     </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="418dp"
+        android:layout_height="42dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="CHECK IN Dashboard"
+        android:textColor="#FFE55C"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069" />
 </androidx.constraintlayout.widget.ConstraintLayout>

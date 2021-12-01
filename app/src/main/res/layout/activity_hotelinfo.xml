@@ -30,16 +30,19 @@
         android:paddingTop="20dp"
         android:text="La Casa De Papel Hotel"
         android:textColor="@color/black"
-        android:textSize="25dp" />
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Address jndjnjdn nskdnks jdnsfjks ksdk"
-        android:textSize="15dp"
-        android:paddingTop="5dp"
         android:paddingLeft="15dp"
-        android:textColor="@color/black"
-        />
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:text="Address: Juhu Rd, Juhu Tara, Juhu, Mumbai, Maharashtra 400049"
+
+        android:textColor="#DA4040"
+        android:textSize="15dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -63,15 +66,40 @@
         android:textColor="@color/black"
         android:textSize="15dp" />
 
+    <TextView
+        android:id="@+id/avail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+
+        android:textColor="#2B8113"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="#FF5722"
+        android:text="Check Availability"
+        app:backgroundTint="#FF5722" />
+
     <Button
         android:id="@+id/proceed"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="10dp"
         android:background="#FFE55C"
         android:elevation="20dp"
         android:text="PROCEED TO DETAILS"
         android:textColor="@color/black"
         app:backgroundTint="#FFE55C" />
+
+
 </LinearLayout>

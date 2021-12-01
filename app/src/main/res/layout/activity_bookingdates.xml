@@ -93,12 +93,12 @@
         app:layout_constraintVertical_bias="0.458" />
 
     <EditText
-        android:id="@+id/editTextDate"
+        android:id="@+id/indate"
         android:layout_width="154dp"
         android:layout_height="41dp"
         android:background="@color/browser_actions_bg_grey"
         android:ems="10"
-        android:hint="DD/MM/YYYY"
+        android:hint="YYYY-MM-DD"
         android:inputType="date"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -126,12 +126,12 @@
         app:layout_constraintVertical_bias="0.451" />
 
     <EditText
-        android:id="@+id/editTextDate2"
+        android:id="@+id/outdate"
         android:layout_width="153dp"
         android:layout_height="36dp"
         android:background="@color/browser_actions_bg_grey"
         android:ems="10"
-        android:hint="DD/MM/YYYY"
+        android:hint="YYYY-MM-DD"
         android:inputType="date"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -189,6 +189,7 @@
         android:layout_height="48dp"
         android:layout_gravity="center"
         android:background="#FFE55C"
+        android:clickable="false"
         android:text="CONFIRM BOOKING"
         android:textColor="#000000"
         app:backgroundTint="#FFE55C"
@@ -215,7 +216,7 @@
         app:layout_constraintVertical_bias="0.68" />
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="No. of guests"
@@ -259,7 +260,7 @@
         app:layout_constraintVertical_bias="0.675" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName10"
+        android:id="@+id/address"
         android:layout_width="154dp"
         android:layout_height="38dp"
         android:background="@color/browser_actions_bg_grey"
@@ -274,7 +275,7 @@
         app:layout_constraintVertical_bias="0.382" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/aadhar"
         android:layout_width="156dp"
         android:layout_height="36dp"
         android:background="@color/browser_actions_bg_grey"
@@ -293,8 +294,9 @@
         android:layout_width="158dp"
         android:layout_height="30dp"
         android:background="@color/browser_actions_bg_grey"
+        android:editable="false"
         android:ems="10"
-        android:inputType="phone"
+        android:inputType="text"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -308,6 +310,7 @@
         android:layout_width="156dp"
         android:layout_height="28dp"
         android:background="@color/browser_actions_bg_grey"
+        android:editable="false"
         android:ems="10"
         android:inputType="phone"
         android:textSize="15sp"
@@ -323,8 +326,9 @@
         android:layout_width="156dp"
         android:layout_height="26dp"
         android:background="@color/browser_actions_bg_grey"
+        android:editable="false"
         android:ems="10"
-        android:inputType="phone"
+        android:inputType="text"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -332,18 +336,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.132" />
-
-    <TextView
-        android:id="@+id/test"
-        android:layout_width="161dp"
-        android:layout_height="28dp"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.548"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.78" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

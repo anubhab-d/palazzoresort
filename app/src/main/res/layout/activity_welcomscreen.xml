@@ -7,24 +7,10 @@
     android:background="#122620"
     tools:context=".welcomscreen">
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="137dp"
-        android:layout_height="64dp"
-        android:background="#B68D40"
-        android:text="BOOK A ROOM"
-        android:textColor="@color/black"
-        app:backgroundTint="#B68D40"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.208"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.43" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="152dp"
+        android:layout_width="168dp"
         android:layout_height="66dp"
         android:background="#B68D40"
         android:text="SELF CHECK-IN"
@@ -32,36 +18,92 @@
         app:backgroundTint="#B68D40"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.431" />
+        app:layout_constraintVertical_bias="0.854" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="168dp"
+        android:layout_height="65dp"
+        android:background="#B68D40"
+        android:text="BOOK A ROOM"
+        android:textColor="@color/black"
+        app:backgroundTint="#B68D40"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.722" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="409dp"
+        android:layout_height="57dp"
+        android:src="@drawable/logotop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="406dp"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textColor="#F3EBEB"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="299dp"
-        android:layout_height="67dp"
-        android:text="WELCOME!"
+        android:layout_width="406dp"
+        android:layout_height="43dp"
+        android:gravity="center"
+        android:textAlignment="center"
         android:textColor="#F3EBEB"
-        android:textSize="50dp"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.536" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:text="What are you in for today?"
+        android:textAlignment="center"
+        android:textColor="#B68D40"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.141" />
+        app:layout_constraintVertical_bias="0.63" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="279dp"
-        android:layout_height="59dp"
-        android:text="What are you in for today?"
-        android:textColor="#B68D40"
-        android:textSize="20dp"
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="416dp"
+        android:layout_height="240dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26" />
+        app:layout_constraintVertical_bias="0.101" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

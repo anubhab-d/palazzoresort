@@ -17,22 +17,28 @@
             android:layout_height="55dp"
             android:src="@drawable/logotop"
 
-
+            android:isScrollContainer="false"
             android:background="#122620"/>
 
+        <ImageView
+            android:layout_width="600dp"
+            android:layout_height="200dp"
+            android:src="@drawable/luxury"
+            android:layout_gravity="center"
+            />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="CHOOSE A ROOM"
+            android:layout_marginTop="0dp"
+            android:background="#000000"
+            android:fontFamily="sans-serif-condensed-medium"
             android:gravity="center_horizontal"
+            android:text="CHOOSE YOUR STAY"
+            android:textColor="#FFEB3B"
 
-            android:layout_marginTop="10dp"
             android:textSize="20dp"
-
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="370dp"
@@ -80,20 +86,22 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="₹1600/night"
-                        android:textColor="@color/black"
-                        android:textSize="12sp"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="20dp"/>
+                        android:layout_marginLeft="20dp"
+                        android:text="₹10100/night"
+                        android:textColor="#EA1515"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Room size: 365 sqft"
-                        android:textColor="@color/black"
-                        android:textSize="12sp"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="35dp"/>
+                        android:layout_marginLeft="35dp"
+                        android:text="Room size: 465 sqft"
+                        android:textColor="#EA1515"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
 
                     <Button
                         android:id="@+id/book1"
@@ -171,20 +179,22 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="₹1600/night"
-                        android:textColor="@color/black"
-                        android:textSize="12sp"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="20dp"/>
+                        android:layout_marginLeft="20dp"
+                        android:text="₹16100/night"
+                        android:textColor="#EA1515"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Room size: 365 sqft"
-                        android:textColor="@color/black"
-                        android:textSize="12sp"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="35dp"/>
+                        android:layout_marginLeft="35dp"
+                        android:text="Room size: 720 sqft"
+                        android:textColor="#EA1515"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
 
                     <Button
                         android:id="@+id/book2"
@@ -260,20 +270,22 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="₹1600/night"
-                        android:textColor="@color/black"
-                        android:textSize="12sp"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="20dp"/>
+                        android:layout_marginLeft="20dp"
+                        android:text="₹25100/night"
+                        android:textColor="#EA1515"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Room size: 365 sqft"
-                        android:textColor="@color/black"
-                        android:textSize="12sp"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="35dp"/>
+                        android:layout_marginLeft="35dp"
+                        android:text="Room size: 1200 sqft"
+                        android:textColor="#EA1515"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
 
                     <Button
                         android:id="@+id/book3"

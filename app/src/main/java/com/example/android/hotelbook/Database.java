@@ -14,14 +14,14 @@ public class Database extends Activity {
     private Connection connection;
 
     //private final String host = "ssprojectinstance.csv2nbvvgbcb.us-east-2.rds.amazonaws.com" ; // For Amazon Postgresql
-    private final String host = "192.168.0.104";
+    private final String host = "192.168.0.106";
     // For Google Cloud Postgresql
     //private final String host = "0.0.1";
     private final String database = "postgres";
     private final int port = 5432;
     private final String user = "postgres";
     private final String pass = "Anubhab1#$%";
-    private String url = "jdbc:postgresql://192.168.0.104:5432/postgres";
+    private String url = "jdbc:postgresql://192.168.0.106:5432/postgres";
     private boolean status;
 
 
@@ -73,36 +73,6 @@ public class Database extends Activity {
     }
 
    // String q = "Insert into customers(ID, Name, Phone number, E-Mail, Room type, Room No., Check In, Check Out, No. of guests, AADHAR, Address) values()";
-    public long insertActor() {
-        String SQL = "INSERT INTO actor(first_name,last_name) "
-                + "VALUES(?,?)";
-
-        long id = 0;
-
-        try (Connection conn = connect();
-             PreparedStatement pstmt = conn.prepareStatement(SQL,
-                     Statement.RETURN_GENERATED_KEYS)) {
-
-            pstmt.setString(1, "HObo");
-            pstmt.setString(2, "Smith");
-
-            int affectedRows = pstmt.executeUpdate();
-            // check the affected rows
-            if (affectedRows > 0) {
-                // get the ID back
-                try (ResultSet rs = pstmt.getGeneratedKeys()) {
-                    if (rs.next()) {
-                        id = rs.getLong(1);
-                    }
-                } catch (SQLException ex) {
-                    System.out.println(ex.getMessage());
-                }
-            }
-        } catch (SQLException ex) {
-            System.out.println(ex.getMessage());
-        }
-        return id;
-    }
 
 
 }
