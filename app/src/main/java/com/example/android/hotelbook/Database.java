@@ -72,7 +72,7 @@ public class Database extends Activity {
         return connection;
     }
 
-   // String q = "Insert into customers(ID, Name, Phone number, E-Mail, Room type, Room No., Check In, Check Out, No. of guests, AADHAR, Address) values()";
+    // String q = "Insert into customers(ID, Name, Phone number, E-Mail, Room type, Room No., Check In, Check Out, No. of guests, AADHAR, Address) values()";
 
 
 }

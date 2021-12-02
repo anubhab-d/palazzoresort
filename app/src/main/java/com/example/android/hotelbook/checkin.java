@@ -44,6 +44,7 @@ public class checkin extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checkin);
+        onClickConnect();
 
         /*TextView name_cin = (TextView) findViewById(R.id.name_cin);
         TextView room_type_cin = (TextView) findViewById(R.id.room_type_cin);
@@ -69,7 +70,7 @@ public class checkin extends Activity {
             @Override
             public void onClick(View view) {
 
-                onClickConnect();
+
                 onClickCreate();
 
                 HashMap hashMap = new HashMap();
@@ -147,14 +148,14 @@ public class checkin extends Activity {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            //Toast.makeText(checkin.this, "Connected", Toast.LENGTH_LONG).show();
+                            Toast.makeText(checkin.this, "Connected", Toast.LENGTH_LONG).show();
                         }
                     });
                 } catch (SQLTimeoutException e) {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            //Toast.makeText(checkin.this, "Connection timeout", Toast.LENGTH_LONG).show();
+                            Toast.makeText(checkin.this, "Connection timeout", Toast.LENGTH_LONG).show();
                         }
                     });
 
@@ -162,7 +163,7 @@ public class checkin extends Activity {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            //Toast.makeText(checkin.this, "Failed to Connect", Toast.LENGTH_LONG).show();
+                            Toast.makeText(checkin.this, "Failed to Connect", Toast.LENGTH_LONG).show();
                         }
                     });
                     Log.e("Tag", e.getMessage());
@@ -180,9 +181,10 @@ public class checkin extends Activity {
 
     //Database db = new Database();
     void onClickCreate() {
+        System.out.println("Delete from customer_data where \"Room_No\" = '"+roomno+"';");
         try {
             if (connection == null || connection.isClosed()) {
-                //Toast.makeText(this, "Connection closed", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Connection closed", Toast.LENGTH_LONG).show();
                 return;
             }
         } catch (SQLException throwables) {
@@ -199,6 +201,7 @@ public class checkin extends Activity {
                         statement = connection.createStatement();
                         statement.execute("Delete from customer_data where \"Room_No\" = '"+roomno+"';");
 
+
                     } catch (SQLException throwables) {
                         throwables.printStackTrace();
                     }
@@ -206,14 +209,16 @@ public class checkin extends Activity {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            //Toast.makeText(checkin.this, "Deleted", Toast.LENGTH_LONG).show();
+                            Toast.makeText(checkin.this, "Deleted", Toast.LENGTH_LONG).show();
+                            System.out.println("Delete from customer_data where \"Room_No\" = '"+roomno+"';");
                         }
                     });
                 }  catch (Exception e) {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            //Toast.makeText(checkin.this, "Something went wrong", Toast.LENGTH_LONG).show();
+                            Toast.makeText(checkin.this, "Something went wrong", Toast.LENGTH_LONG).show();
+                            System.out.println("Delete from customer_data where \"Room_No\" = '"+roomno+"';");
                         }
                     });
 
