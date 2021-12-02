@@ -148,14 +148,14 @@ public class checkin extends Activity {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            Toast.makeText(checkin.this, "Connected", Toast.LENGTH_LONG).show();
+                            //Toast.makeText(checkin.this, "Connected", Toast.LENGTH_LONG).show();
                         }
                     });
                 } catch (SQLTimeoutException e) {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            Toast.makeText(checkin.this, "Connection timeout", Toast.LENGTH_LONG).show();
+                            //Toast.makeText(checkin.this, "Connection timeout", Toast.LENGTH_LONG).show();
                         }
                     });
 
@@ -163,7 +163,7 @@ public class checkin extends Activity {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            Toast.makeText(checkin.this, "Failed to Connect", Toast.LENGTH_LONG).show();
+                            //Toast.makeText(checkin.this, "Failed to Connect", Toast.LENGTH_LONG).show();
                         }
                     });
                     Log.e("Tag", e.getMessage());
@@ -184,7 +184,7 @@ public class checkin extends Activity {
         System.out.println("Delete from customer_data where \"Room_No\" = '"+roomno+"';");
         try {
             if (connection == null || connection.isClosed()) {
-                Toast.makeText(this, "Connection closed", Toast.LENGTH_LONG).show();
+                //Toast.makeText(this, "Connection closed", Toast.LENGTH_LONG).show();
                 return;
             }
         } catch (SQLException throwables) {
@@ -209,16 +209,16 @@ public class checkin extends Activity {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            Toast.makeText(checkin.this, "Deleted", Toast.LENGTH_LONG).show();
-                            System.out.println("Delete from customer_data where \"Room_No\" = '"+roomno+"';");
+                            //Toast.makeText(checkin.this, "Deleted", Toast.LENGTH_LONG).show();
+
                         }
                     });
                 }  catch (Exception e) {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            Toast.makeText(checkin.this, "Something went wrong", Toast.LENGTH_LONG).show();
-                            System.out.println("Delete from customer_data where \"Room_No\" = '"+roomno+"';");
+                            //Toast.makeText(checkin.this, "Something went wrong", Toast.LENGTH_LONG).show();
+                            
                         }
                     });
 
