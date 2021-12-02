@@ -247,9 +247,7 @@ public class hotelinfo extends Activity {
             for(String b: arrStandard){
                 if(b.equals(a)){
                     flag=1;
-
                 }
-
             }
             if(flag == 1){
                 flag=0;
@@ -259,10 +257,7 @@ public class hotelinfo extends Activity {
                 arrayStandardAvail.add(a);
             }
             count = arrayStandardAvail.size();
-
-
         }
-
     }
     public void availableDlx(){
         int flag = 0;
